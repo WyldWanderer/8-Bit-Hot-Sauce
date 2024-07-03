@@ -1,0 +1,8 @@
+<h1>Our Sauces</h1>
+
+<% @sauces.each do |sauce| %>
+    <h1><%= sauce.title %></p>
+    <p><%= sauce.description %></p>
+    <p><%= sauce.heat_level %></p>
+    <p><%= sauce.best_on %></p>
+<% end %>

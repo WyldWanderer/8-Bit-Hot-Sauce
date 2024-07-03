@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @sauce.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @sauce.description %>
+</p>
+
+<p>
+  <strong>Heat level:</strong>
+  <%= @sauce.heat_level %>
+</p>
+
+<%= link_to 'Edit', edit_sauce_path(@sauce) %> |
+<%= link_to 'Back', sauces_path %>

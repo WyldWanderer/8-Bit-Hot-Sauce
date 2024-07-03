@@ -1,0 +1,71 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @font-face {
+    font-family: "Karmatic Arcade";
+    src: url('/assets/ka1.ttf');
+ }
+
+ body {
+	background: linear-gradient(-45deg, #ee7752, #ff2929, #FFBC02, #FFAF29);
+	background-size: 1000% 1000%;
+	animation: gradient 10s ease infinite;
+	height: 100%;
+  	margin: 15px;
+}
+div {
+    display: flex;
+    justify-content: center;
+    align-items: space-around;
+    gap: 15px;
+}
+a {
+    font-family: "Karmatic Arcade", monospace;
+    font-size: 30px;
+    color: white;
+}
+
+p {
+	font: bold;
+	font-size: 20px;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  }
+
+.title {
+	display: flex;
+	justify-content: center;
+	font-family: "Karmatic Arcade", monospace;
+	color: white;
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
