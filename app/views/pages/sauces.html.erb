@@ -1,8 +1,11 @@
+<h1 class="title" >Welcome to 8 Bit Hot Sauces</h1>
+<div><%= render "shared/nav"%></div>
+
 <h1>Our Sauces</h1>
 
 <% @sauces.each do |sauce| %>
     <h1><%= sauce.title %></p>
     <p><%= sauce.description %></p>
-    <p><%= sauce.heat_level %></p>
+    <p>Heat Level: <%= sauce.heat_level %></p>
     <p><%= sauce.best_on %></p>
 <% end %>
